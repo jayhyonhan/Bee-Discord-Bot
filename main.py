@@ -950,7 +950,9 @@ async def car_game(ctx):
     car = random.choice(list(cars.keys()))
     if random.randint(1, rare_car_chance) == 1:
         car = 'Bugatti'
-    logo_url = cars[car]
+        logo_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg/800px-Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg"
+    else:
+        logo_url = cars[car]
 
     embed = discord.Embed(
         title="Guess the Car Brand!",
